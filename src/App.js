@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { ethers, utils } from "ethers";
 import abi from "./contracts/Bank.json";
-//0x981272f4CFAd24599a91F4aF5319FabD2026f1AC
+//0x981272f4CFAd24599a91F4aF5319FabD2026f1AC     contract address
 
 function App() {
   const [isWalletConnected, setIsWalletConnected] = useState(false);
