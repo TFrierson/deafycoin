@@ -168,7 +168,7 @@ function App() {
 
         const txn = await bankContract.withdrawMoney(myAddress, ethers.utils.parseEther(inputValue.withdraw));
         console.log("Withdrawing money....");
-        awaittxn.wait();
+        await txn.wait();
         console.log("Money withdrawn...", txn.hash);
 
         customerBalanceHandler();
