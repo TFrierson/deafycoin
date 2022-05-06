@@ -149,10 +149,8 @@ function App() {
 
   useEffect(() => {
     checkIfWalletIsConnected();
-    getBankName();
-    getbankOwnerHandler();
-    customerBalanceHandler()
-  }, [isWalletConnected])
+    getTokenInfo();
+  }, [])
 
   return (
     <main className="main-container">
